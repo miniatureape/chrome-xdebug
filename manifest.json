@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "xdebug",
+  "description": "Helps with xdebug",
+  "version": "1.0",
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

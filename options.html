@@ -1,0 +1,51 @@
+<style>
+    body {
+        font-family: Helvetica, Arial, 'sans-serif';
+        max-width: 500px;
+        margin: 30px auto 0 auto;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .section {
+        border-bottom: 1px solid #eee;
+    }
+
+    .description {
+        font-size: smaller;
+    }
+
+    input[type=text] {
+        border: 1px solid #ddd;
+    }
+
+    label {
+        display: block;
+        font-size: smaller;
+        font-weight: bold;
+    }
+    
+</style>
+
+<div class="section">
+    <h1>Filters</h1>
+    <p class="description">xDebug session cookie will not be sent with any request that matches a regex filter. Click to delete.</p>
+    <ul id="filters"></ul>
+    <form id="add-filter-form">
+        <label>Add Filter</label><input id="add-filter" value='' />
+        <input type="submit" />
+    </form>
+</div>
+
+<div class="section">
+    <h1>xDebug Options</h1>
+    <form id="xdebug-param-form">
+        <label>xDebug Param<label> <input id="xdebug-param" value='XDEBUG_SESSION_START' />
+        <input type="submit" />
+    </form>
+</div>
+
+
+<script src="options.js"></script>
