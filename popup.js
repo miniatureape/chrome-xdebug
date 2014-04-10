@@ -67,6 +67,7 @@
 		url: currentUrl,
                 domain: currentSLD,
                 value: cookieValue,
+	        path: '/',
             }, function(cookie) {
                 showToggle(true);
             })
